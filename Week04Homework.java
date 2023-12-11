@@ -8,6 +8,7 @@ public class Week04Homework {
 		//1: 
 		//Created an array, subtracted the value in the first number in the array which is stored in [0] so the last one is stored in .length -1
 		int[] ages = {3, 9, 23, 64, 2, 8, 28, 93};
+		// this is last element in the array and subtracting the first element
 		int x = ages[ages.length -1] - ages[0];
 		System.out.println("The first age subtracted from the last age is: " + x);
 
@@ -20,12 +21,13 @@ public class Week04Homework {
 
 		
 		//calculating the sum total in ages2
+		// loop that iterates through elements then adds each one to a running total 
 		for (int i = 0; i < ages2.length; i++ ) {
 			total += ages2[i];
 
 		}
 		
-		//then divide by ages2's by number of elements in the array.
+		//then divide ages2's sum by number of elements in the array.
 		double average = total / ages2.length;
 		System.out.println("The average age is: " + average);
 
@@ -47,7 +49,7 @@ public class Week04Homework {
 
 		//5:
 		int[] nameLengths = new int[names.length];
-		// get the total length of all strings in the array 
+		// get the total length of all strings in the array by iterating 
 		for (int a = 0; a < names.length; a++) {
 			nameLengths[a] = names[a].length();
 		}
@@ -192,7 +194,7 @@ public class Week04Homework {
 		}
 		//takes the sum of all scores then subtracts the highest and lowest scores
 		sumOfScores= sumOfScores - highestScore - lowestScore;
-		//sub 2 from length to get average because two elements of the array are being removed from the average 
+		//sub 2 from length of the array  to get average because two elements of the array are being removed 
 		return sumOfScores / (scores.length-2);
 		
 	}
